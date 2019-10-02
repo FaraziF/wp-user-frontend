@@ -454,6 +454,7 @@ class WPUF_Admin_Subscription {
                                 <th><?php _e( 'Expiration Message', 'wp-user-frontend' ); ?></th>
                                 <td>
                                     <textarea name="post_expiration_settings[post_expiration_message]" id="wpuf-post_expiration_message" cols="50" rows="5"><?php echo $post_expiration_message;?></textarea>
+                                    <p class="description"><strong><?php echo __( 'You may use: {post_author} {post_url} {blogname} {post_title} {post_status}', 'wp-user-frontend' ); ?></strong></p>
                                 </td>
                             </tr>
 
@@ -773,7 +774,7 @@ class WPUF_Admin_Subscription {
             do_action( 'wpuf_admin_subscription_content', $userdata->ID ) ?>
             <?php if ( !empty( $user_sub ) ): ?>
                 <div class="wpuf-sub-actions">
-                    <a class="btn button-secondary wpuf-delete-pack-btn" href="javascript:" data-userid="<?php echo $userdata->ID; ?>" data-packid="<?php echo $user_sub['pack_id']; ?>"><?php _e( 'Delete Package', 'wp-user-frontend' ); ?></a>
+                    <a class="btn button-secondary wpuf-delete-pack-btn" href="javascript:" data-userid="<?php echo $userdata->ID; ?>" data-packid="<?php echo isset( $user_sub['pack_id'] ) ? $user_sub['pack_id'] : ''; ?>"><?php _e( 'Delete Package', 'wp-user-frontend' ); ?></a>
                 </div>
             <?php endif; ?>
         </div>
