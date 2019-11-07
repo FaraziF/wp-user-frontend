@@ -16,8 +16,9 @@ class GuestPostCheckAndEnableCest
     	// $I->loginAsAdmin();
 
         $I->amOnPage('/testing');
-        $I->click('New Post');
+        // $I->click('New Post');
         $I->see('This page is restricted. Please Log in / Register to view this page.');
+        
         $nick = $I->haveFriend('nick');
         $nick->does(function(AcceptanceTester $I) {
                 $I->loginAsAdmin();
