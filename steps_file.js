@@ -8,7 +8,7 @@ module.exports = function() {
     loginAsAdmin: function () {
       this.amOnPage('/login');
       this.fillField('Username or Email', 'admin');
-      this.fillField('Password', 'admin');
+      this.fillField('Password', secret('admin'));
       this.checkOption('Remember Me');
       this.click('wp-submit');
       this.dontSeeElement('.wpuf-error');
