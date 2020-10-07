@@ -307,6 +307,15 @@ class WPUF_Frontend_Render_Form {
             return;
         }
 
+        if ( wpuf_validate_boolean( $this->form_settings['role_base'] ) && ! wpuf_user_has_roles( $this->form_settings['roles'] ) ) {
+            ?>
+            <div class="wpuf-message"><?php esc_html_e( 'You do not have sufficient permissions to access this form.', 'wp-user-frontend'  ); ?></div>
+            <?php
+
+
+            return;
+        }
+
         if ( $this->form_fields ) { ?>
 
                 <form class="wpuf-form-add wpuf-form-<?php echo esc_attr( $layout ); ?> <?php echo ( $layout == 'layout1' ) ? esc_html( $theme_css ) : 'wpuf-style'; ?>" action="" method="post">
@@ -565,11 +574,18 @@ class WPUF_Frontend_Render_Form {
                     $terms = array_map( function ( $term_name ) use ( $taxonomy ) {
                         $term = get_term_by( 'name', $term_name, $taxonomy['name'] );
 
-                        if ( $term instanceof WP_Term  ) {
-                            return $term->term_id;
+                        if ( empty( $term_name ) ) {
+                            return null;
                         }
 
-                        return null;
+                        if ( $term instanceof WP_Term  ) {
+                            return $term->term_id;
+
+                        } 
+
+                        $new_term = wp_insert_term( $term_name, $taxonomy['name'] );
+
+                        return $new_term['term_id'];
 
                     }, $terms );
 

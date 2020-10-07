@@ -104,6 +104,10 @@ class WPUF_Field_Manager {
      */
     private function register_field_types() {
         require_once __DIR__ . '/fields/class-abstract-fields.php';
+        require_once __DIR__ . '/fields/class-field-post-title.php';
+        require_once __DIR__ . '/fields/class-field-post-tags.php';
+        require_once __DIR__ . '/fields/class-field-post-taxonomy.php';
+        require_once __DIR__ . '/fields/class-field-post-content.php';
         require_once __DIR__ . '/fields/class-field-text.php';
         require_once __DIR__ . '/fields/class-field-email.php';
         require_once __DIR__ . '/fields/class-field-textarea.php';
@@ -118,8 +122,13 @@ class WPUF_Field_Manager {
         require_once __DIR__ . '/fields/class-field-hidden.php';
         require_once __DIR__ . '/fields/class-field-image.php';
         require_once __DIR__ . '/fields/class-field-recaptcha.php';
+        require_once __DIR__ . '/fields/class-field-featured-image.php';
 
         $fields = [
+            'post_title'          => new WPUF_Form_Field_Post_Title(),
+            'post_content'        => new WPUF_Form_Field_Post_Content(),
+            'post_tags'           => new WPUF_Form_Field_Post_Tags(),
+            'taxonomy'            => new WPUF_Form_Field_Post_Taxonomy( 'category', 'category' ),
             'text_field'          => new WPUF_Form_Field_Text(),
             'email_address'       => new WPUF_Form_Field_Email(),
             'textarea_field'      => new WPUF_Form_Field_Textarea(),
@@ -134,6 +143,7 @@ class WPUF_Field_Manager {
             'custom_hidden_field' => new WPUF_Form_Field_Hidden(),
             'image_upload'        => new WPUF_Form_Field_Image(),
             'recaptcha'           => new WPUF_Form_Field_reCaptcha(),
+            'featured_image'      => new WPUF_Form_Field_Featured_Image(),
         ];
 
         $this->fields = apply_filters( 'wpuf-form-fields', $fields );

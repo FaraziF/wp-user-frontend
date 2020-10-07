@@ -31,11 +31,18 @@
                 </label>
             </div>
 
-            <div v-if="!is_failed_to_validate(field.template)" class="control-buttons">
+            <div class="control-buttons">
                 <p>
-                    <i class="fa fa-arrows move"></i>
-                    <i class="fa fa-pencil" @click="open_field_settings(field.id)"></i>
-                    <i class="fa fa-clone" @click="clone_field(field.id, index)"></i>
+                    <template v-if="!is_failed_to_validate(field.template)">
+                        <i class="fa fa-arrows move"></i>
+                        <i class="fa fa-pencil" @click="open_field_settings(field.id)"></i>
+                        <i class="fa fa-clone" @click="clone_field(field.id, index)"></i>
+                    </template>
+                    <template v-else>
+                        <i class="fa fa-arrows control-button-disabled"></i>
+                        <i class="fa fa-pencil control-button-disabled"></i>
+                        <i class="fa fa-clone control-button-disabled"></i>
+                    </template>
                     <i class="fa fa-trash-o" @click="delete_field(index)"></i>
                 </p>
             </div>
@@ -742,10 +749,10 @@
 <script type="text/x-template" id="tmpl-wpuf-form-taxonomy">
 <div class="wpuf-fields">
     <select
+        v-if="'select' === field.type"
         :class="field.name"
         v-html ="get_term_dropdown_options()"
-    >
-    </select>
+    />
 
     <div v-if="'ajax' === field.type" class="category-wrap">
         <div>
@@ -769,11 +776,10 @@
         <div v-if="'yes' === field.show_inline" class="category-wrap">
             <div v-html="get_term_checklist_inline()"></div>
         </div>
-        <div v-else-if="'no' === field.show_inline" class="category-wrap">
+        <div v-else class="category-wrap">
             <div v-html="get_term_checklist()"></div>
         </div>
     </div>
-
 
     <input
         v-if="'text' === field.type"
@@ -783,7 +789,6 @@
         size="40"
         autocomplete="off"
     >
-
     <span v-if="field.help" class="wpuf-help" v-html="field.help" />
 </div>
 </script>
