@@ -1,0 +1,218 @@
+
+
+<<< Recorded commands on Tue Jun 30 2020 09:52:44 GMT+0600 (Bangladesh Standard Time)
+I.dragAndDrop('li.button.ui-draggable.ui-draggable-handle', 'li.field-items.empty-list-item');
+
+
+<<< Recorded commands on Tue Jun 30 2020 14:41:31 GMT+0600 (Bangladesh Standard Time)
+I.click('User Frontend');
+I.click('Subscription');
+I.click('//tr[1]');
+I.click('//tr[1]/td/strong/a');
+I.click('Posting Restriction');
+I.fillField('post_type_name[post]', '2');
+I.click('Update');
+I.click('Post Forms');
+I.click('//tr[1]/td/a');
+I.click('//*[@id="the-list"]/tr[1]/td[1]/a');
+I.click('.form-id');
+I.click('Settings', 'h2');
+I.click('Settings', 'h2');
+I.click('Submission Restriction');
+I.checkOption('Enable Guest Post');
+I.click('Payment Settings');
+I.checkOption('Enable Payments');
+I.checkOption('Force subscription pack');
+I.seeCheckboxIsChecked('Fallback pay per post charging');
+I.fillField('wpuf_settings[fallback_ppp_cost]', '1');
+I.checkOption('Enable Pay Per Post');
+I.fillField('wpuf_settings[pay_per_post_cost]', '3');
+I.click('Save Form');
+
+<<< Recorded commands on Tue Jun 30 2020 15:39:43 GMT+0600 (Bangladesh Standard Time)
+I.click('Pages');
+I.click('Test Page');
+I.click('Next');
+I.click('Next');
+I.click('Next');
+I.clearField('.block-editor-block-list__layout p');
+I.pressKey(['Command', 'V']);
+I.click('Update');
+
+<<< Recorded commands on Wed Jul 01 2020 11:02:02 GMT+0600 (Bangladesh Standard Time)
+I.forceClick('button.components-button.has-icon');
+I.click('/html/body/div[4]/div/div/div/div/div/div/div/div[1]/button');
+I.clearField('.block-editor-block-list__layout p');
+I.pressKey(['CommandOrControl', 'V']);
+I.pressKey(['Control', 'V']);
+I.pressKey('Insert');
+I.pressKey(['Command', 'V']);
+I.pressKey(['Command', 'V']);
+I.pressKey(['Command', 'V']);
+I.pressKey(['Command', 'v']);
+I.amOnPage('/wp-admin/admin.php?page=wpuf-post-forms&action=edit&id=304');
+I.click('.form-id');
+I.amOnPage('/wp-admin/admin.php?page=wpuf-post-forms&action=edit&id=304');
+I.amOnPage('/wp-admin/post.php?post=398&action=edit');
+I.click('#blocks-shortcode-input-0');
+I.pressKey(['Command', 'V']);
+I.click('.block-editor-plain-text.input-control');
+I.pressKey(['Command', 'V']);
+I.pressKey(['CommandOrControl', 'V']);
+I.amOnPage('/wp-admin/admin.php?page=wpuf-post-forms&action=edit&id=304');
+I.doubleClick('.form-id');
+I.amOnPage('/wp-admin/post.php?post=398&action=edit');
+I.click('.block-editor-block-list__layout p');
+I.clearField('.block-editor-block-list__layout p');
+I.click('.block-editor-block-list__layout p');
+I.pressKey(['Command', 'V']);
+I.amOnPage('/wp-admin/post.php?post=398&action=edit');
+I.pressKey(['Command', 'V']);
+I.click('.block-editor-block-list__layout p');
+I.pressKey(['Command', 'V']);
+I.pressKey(['CommandOrControl', 'V']);
+
+<<< Recorded commands on Wed Jul 01 2020 11:34:31 GMT+0600 (Bangladesh Standard Time)
+I.clearField('.block-editor-block-list__layout p');
+I.click('.block-editor-block-list__layout');
+I.pressKey(['CommandOrControl', 'V']);
+I.amOnPage('/wp-admin/admin.php?page=wpuf-post-forms&action=edit&id=304');
+I.doubleClick('.form-id');
+I.amOnPage('/wp-admin/post.php?post=398&action=edit');
+I.clearField('.block-editor-block-list__layout p');
+I.pressKey(['CommandOrControl', 'V']);
+I.click('.block-editor-block-list__layout');
+I.pressKey(['CommandOrControl', 'V']);
+I.pressKey(['Command', 'V']);
+I.pressKey(['Command', 'v']);
+I.pressKey(['CommandOrControl', 'v']);
+I.pressKey(['CommandOrControl', 'v']);
+I.pressKey(['CommandOrControl', 'v']);
+I.pressKey(['CommandOrControl', 'V']);
+I.type('shortcode');
+I.pressKey(['CommandOrControl', 'V']);
+I.clearField('.block-editor-block-list__layout p');
+I.pressKey(['CommandOrControl', 'V']);
+I.amOnPage('/wp-admin/admin.php?page=wpuf-post-forms&action=edit&id=304');
+I.doubleClick('.form-id');
+I.amOnPage('/wp-admin/post.php?post=398&action=edit');
+I.clearField('.block-editor-block-list__layout p');
+I.pressKey(['CommandOrControl', 'V']);
+I.pressKey(['Command', 'V']);
+I.pressKey(['Command', 'v']);
+I.pressKey(['cmd', 'v']);
+I.pressKey(['cmd', 'V']);
+I.pressKey(['CMD', 'V']);
+I.pressKey(['CMD', 'V']);
+I.pressKey(['cmdOrControl', 'V']);
+I.pressKey(['Command', 'V']);
+I.pressKey(['Command', 'V'], '.block-editor-block-list__layout');
+I.pressKey(['CommandOrControl', 'V'], '.block-editor-block-list__layout');
+I.pressKey(['CommandOrControl', 'V'], '.block-editor-block-list__layout');
+I.pressKey(['Command', 'V']);
+I.pressKey(['Command', 'C']);
+I.pressKey(['Command', 'V']);
+I.pressKey(['Command', 'V']);
+I.pressKey(['CMD', 'V']);
+I.pressKey(['cmd', 'V']);
+I.pressKey('cmd', 'V');
+I.pressKey('Command', 'V');
+I.pressKey('Command', 'v');
+I.pressKey('command', 'v');
+
+<<< Recorded commands on Wed Jul 01 2020 13:56:44 GMT+0600 (Bangladesh Standard Time)
+I.see('Post saved');
+I.refreshPage();
+I.fillField('post_title', 'This is my new post 01');
+I.fillField('post_content', 'This is my new post description');
+I.click('submit');
+I.see('Post saved');
+I.refreshPage();
+I.see('Your Subscription pack is exhausted.');
+I.fillField('post_title', 'This is my new post 03');
+I.fillField('post_content', 'This is my new post 3 description');
+I.click('submit');
+I.checkOption('Bank Payment');
+
+<<< Recorded commands on Thu Jul 02 2020 12:49:30 GMT+0600 (Bangladesh Standard Time)
+
+I.click('Save Changes');
+
+<<< Recorded commands on Thu Jul 02 2020 13:21:32 GMT+0600 (Bangladesh Standard Time)
+I.click('//*[@id="panel-form-field-buttons-custom-fields"]/li[18]');
+I.click('//*[@id="panel-form-field-buttons-custom-fields"]/li[19]');
+I.click('//*[@id="panel-form-field-buttons-others"]/li[1]');
+I.click('//*[@id="panel-form-field-buttons-others"]/li[2]');
+I.click('//*[@id="panel-form-field-buttons-others"]/li[3]');
+I.click('//*[@id="panel-form-field-buttons-others"]/li[4]');
+I.click('//*[@id="panel-form-field-buttons-others"]/li[5]');
+I.click('//*[@id="panel-form-field-buttons-others"]/li[6]');
+I.click('//*[@id="panel-form-field-buttons-others"]/li[7]');
+I.click('//*[@id="panel-form-field-buttons-others"]/li[8]');
+I.click('//*[@id="panel-form-field-buttons-others"]/li[9]');
+I.click('//*[@id="panel-form-field-buttons-others"]/li[10]');
+I.click('Settings', 'h2');
+I.checkOption('Enable Multistep');
+I.click('Save Form');
+I.click('Preview');
+
+<<< Recorded commands on Thu Jul 02 2020 17:17:36 GMT+0600 (Bangladesh Standard Time)
+I.fillField('tag-name', 'Sports');
+I.fillField('slug', 'Sports');
+I.fillField('description', 'Sports');
+I.click('submit');
+
+I.uncheckOption('.tabs-panel');
+
+I.click('.select-all');
+I.checkOption('//div[@class="subscription-nav-content"]//ul[1]');
+I.checkOption('//div[@class="subscription-nav-content"]//ul[1]');
+I.click('.select-all');
+
+
+<<< Recorded commands on Thu Jul 02 2020 18:40:45 GMT+0600 (Bangladesh Standard Time)
+I.moveCursorTo('//*[@id="wpuf-form-template-modal"]/div[1]/div/div/ul/li[2]/img');
+I.moveCursorTo('.blank-form')
+I.moveCursorTo('.blank-form')
+I.moveCursorTo('//*[@id="wpuf-form-template-modal"]/div[1]/div/div/ul/li[2]/img');
+I.moveCursorTo('//*[@id="wpuf-form-template-modal"]/div[1]/div/div/ul/li[2]/img');
+I.forceClick('Create Form');
+I.moveCursorTo('//*[@id="wpuf-form-template-modal"]/div[1]/div/div/ul/li[2]/img');
+I.forceClick('Create Form');
+I.moveCursorTo('//*[@id="wpuf-form-template-modal"]/div[1]/div/div/ul/li[2]/img');
+I.forceClick('Create Form');
+I.moveCursorTo('//*[@id="wpuf-form-template-modal"]/div[1]/div/div/ul/li[2]/img');
+I.forceClick('Create Form');
+I.moveCursorTo('.blank-form');
+I.forceClick('Create Form');
+I.click('//*[@id="panel-form-field-buttons-post-fields"]/li[1]');
+I.click('//*[@id="panel-form-field-buttons-post-fields"]/li[2]');
+I.click('//*[@id="panel-form-field-buttons-taxonomies"]/li[1]');
+I.click('Save Form');
+I.click('.form-id');
+I.amOnPage('/wp-admin/post-new.php');
+I.fillField('#post-title-0', 'My Post');
+I.fillField('#post-title-0', 'My Post');
+I.pressKey('Tab');
+I.pressKey('Command', 'V');
+I.pressKey(['Command', 'V']);
+I.pressKey(['CommandOrControl', 'V']);
+I.pressKey(['CommandOrControl', 'V']);
+I.pressKey(['CommandOrControl', 'V']);
+
+<<< Recorded commands on Thu Jul 02 2020 18:54:05 GMT+0600 (Bangladesh Standard Time)
+I.pressKey('Command', 'V');
+I.pressKey('CommandOrControl', 'V');
+I.pressKey(['CommandOrControl', 'V']);
+
+<<< Recorded commands on Thu Jul 02 2020 19:45:14 GMT+0600 (Bangladesh Standard Time)
+I.click('#category');
+I.click('#category');
+I.loginAsSubscriber();
+I.amOnPage('/');
+I.click('#category');
+
+<<< Recorded commands on Wed Jul 08 2020 09:20:16 GMT+0600 (Bangladesh Standard Time)
+I.seeInCurrentUrl('/wp-admin/admin.php?page=wpuf_transaction');
+I.see('Transactions');
+I.close

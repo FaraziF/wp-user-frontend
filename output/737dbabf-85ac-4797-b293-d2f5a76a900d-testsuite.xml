@@ -1,0 +1,282 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1594206163783' stop='1594206230685'>
+    <name>Check Taxonomy Restruction from subscription:</name>
+    <title>Check Taxonomy Restruction from subscription:</title>
+    <test-cases>
+        <test-case start='1594206163783' status='passed' stop='1594206230627'>
+            <name>Enable &amp; Configure taxonomy restriction from subscription </name>
+            <title>Enable &amp; Configure taxonomy restriction from subscription </title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1594206165292' status='passed' stop='1594206178903'>
+                    <name>I: loginAsAdmin </name>
+                    <title>I: loginAsAdmin </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1594206165292' status='passed' stop='1594206170416'>
+                            <name>I am on page "/login"</name>
+                            <title>I am on page "/login"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206170417' status='passed' stop='1594206170586'>
+                            <name>I fill field "Username or Email", "admin"</name>
+                            <title>I fill field "Username or Email", "admin"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206170586' status='passed' stop='1594206170713'>
+                            <name>I fill field "Password", *****</name>
+                            <title>I fill field "Password", *****</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206170714' status='passed' stop='1594206171882'>
+                            <name>I check option "Remember Me"</name>
+                            <title>I check option "Remember Me"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206171883' status='passed' stop='1594206175229'>
+                            <name>I click "wp-submit"</name>
+                            <title>I click "wp-submit"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206175229' status='passed' stop='1594206175243'>
+                            <name>I dont see element ".wpuf-error"</name>
+                            <title>I dont see element ".wpuf-error"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206175243' status='passed' stop='1594206178729'>
+                            <name>I am on page "/account"</name>
+                            <title>I am on page "/account"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206178729' status='passed' stop='1594206178903'>
+                            <name>I see "Hello admin"</name>
+                            <title>I see "Hello admin"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1594206178903' status='passed' stop='1594206181439'>
+                    <name>I am on page "/wp-admin/edit.php?post_type=wpuf_subscription"</name>
+                    <title>I am on page "/wp-admin/edit.php?post_type=wpuf_subscription"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206181439' status='passed' stop='1594206184287'>
+                    <name>I click "//tr[1]/td/strong/a"</name>
+                    <title>I click "//tr[1]/td/strong/a"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206184287' status='passed' stop='1594206184399'>
+                    <name>I click "Taxonomy Restriction"</name>
+                    <title>I click "Taxonomy Restriction"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206184399' status='passed' stop='1594206184547'>
+                    <name>I click ".select-all"</name>
+                    <title>I click ".select-all"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206184547' status='passed' stop='1594206188615'>
+                    <name>I click "Update"</name>
+                    <title>I click "Update"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206188615' status='passed' stop='1594206190522'>
+                    <name>I am on page "/wp-admin/edit-tags.php?taxonomy=category"</name>
+                    <title>I am on page "/wp-admin/edit-tags.php?taxonomy=category"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206190522' status='passed' stop='1594206190613'>
+                    <name>I click "#cb-select-all-1"</name>
+                    <title>I click "#cb-select-all-1"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206190613' status='passed' stop='1594206190693'>
+                    <name>I select option "#bulk-action-selector-top", "Delete"</name>
+                    <title>I select option "#bulk-action-selector-top", "Delete"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206190693' status='passed' stop='1594206194401'>
+                    <name>I click "#doaction"</name>
+                    <title>I click "#doaction"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206194401' status='passed' stop='1594206194520'>
+                    <name>I fill field "tag-name", "Food"</name>
+                    <title>I fill field "tag-name", "Food"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206194521' status='passed' stop='1594206195154'>
+                    <name>I click "submit"</name>
+                    <title>I click "submit"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206195159' status='passed' stop='1594206197160'>
+                    <name>I wait 2</name>
+                    <title>I wait 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206197160' status='passed' stop='1594206197260'>
+                    <name>I fill field "tag-name", "Sports"</name>
+                    <title>I fill field "tag-name", "Sports"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206197260' status='passed' stop='1594206197826'>
+                    <name>I click "submit"</name>
+                    <title>I click "submit"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206197826' status='passed' stop='1594206199826'>
+                    <name>I wait 2</name>
+                    <title>I wait 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206199826' status='passed' stop='1594206199916'>
+                    <name>I fill field "tag-name", "Mango"</name>
+                    <title>I fill field "tag-name", "Mango"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206199916' status='passed' stop='1594206199977'>
+                    <name>I select option "parent", "Food"</name>
+                    <title>I select option "parent", "Food"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206199977' status='passed' stop='1594206200593'>
+                    <name>I click "submit"</name>
+                    <title>I click "submit"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206200593' status='passed' stop='1594206203277'>
+                    <name>I am on page "/wp-admin/admin.php?page=wpuf-post-forms"</name>
+                    <title>I am on page "/wp-admin/admin.php?page=wpuf-post-forms"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206203277' status='passed' stop='1594206203353'>
+                    <name>I click "Add Form"</name>
+                    <title>I click "Add Form"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206204630' status='passed' stop='1594206209425'>
+                    <name>Check Taxonomy restriction with subscriber &amp; not-subscriber: I am on page "/test-post"</name>
+                    <title>Check Taxonomy restriction with subscriber &amp; not-subscriber: I am on page "/test-post"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206209425' status='passed' stop='1594206210585'>
+                    <name>Check Taxonomy restriction with subscriber &amp; not-subscriber: I click "#category"</name>
+                    <title>Check Taxonomy restriction with subscriber &amp; not-subscriber: I click "#category"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206210585' status='passed' stop='1594206212591'>
+                    <name>Check Taxonomy restriction with subscriber &amp; not-subscriber: I wait 2</name>
+                    <title>Check Taxonomy restriction with subscriber &amp; not-subscriber: I wait 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206212591' status='passed' stop='1594206225397'>
+                    <name>I: loginAsSubscriber </name>
+                    <title>I: loginAsSubscriber </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1594206212591' status='passed' stop='1594206216758'>
+                            <name>Check Taxonomy restriction with subscriber &amp; not-subscriber: I am on page "/login"</name>
+                            <title>Check Taxonomy restriction with subscriber &amp; not-subscriber: I am on page "/login"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206216758' status='passed' stop='1594206217036'>
+                            <name>Check Taxonomy restriction with subscriber &amp; not-subscriber: I fill field "Username or Email", "Ward_Mayer51"</name>
+                            <title>Check Taxonomy restriction with subscriber &amp; not-subscriber: I fill field "Username or Email", "Ward_Mayer51"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206217036' status='passed' stop='1594206217175'>
+                            <name>Check Taxonomy restriction with subscriber &amp; not-subscriber: I fill field "Password", *****</name>
+                            <title>Check Taxonomy restriction with subscriber &amp; not-subscriber: I fill field "Password", *****</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206217176' status='passed' stop='1594206218342'>
+                            <name>Check Taxonomy restriction with subscriber &amp; not-subscriber: I check option "Remember Me"</name>
+                            <title>Check Taxonomy restriction with subscriber &amp; not-subscriber: I check option "Remember Me"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206218342' status='passed' stop='1594206222006'>
+                            <name>Check Taxonomy restriction with subscriber &amp; not-subscriber: I click "wp-submit"</name>
+                            <title>Check Taxonomy restriction with subscriber &amp; not-subscriber: I click "wp-submit"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206222006' status='passed' stop='1594206222021'>
+                            <name>Check Taxonomy restriction with subscriber &amp; not-subscriber: I dont see element ".wpuf-error"</name>
+                            <title>Check Taxonomy restriction with subscriber &amp; not-subscriber: I dont see element ".wpuf-error"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206222021' status='passed' stop='1594206225250'>
+                            <name>Check Taxonomy restriction with subscriber &amp; not-subscriber: I am on page "/account"</name>
+                            <title>Check Taxonomy restriction with subscriber &amp; not-subscriber: I am on page "/account"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206225251' status='passed' stop='1594206225397'>
+                            <name>Check Taxonomy restriction with subscriber &amp; not-subscriber: I see "Hello Ward_Mayer51"</name>
+                            <title>Check Taxonomy restriction with subscriber &amp; not-subscriber: I see "Hello Ward_Mayer51"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1594206225397' status='passed' stop='1594206227387'>
+                    <name>Check Taxonomy restriction with subscriber &amp; not-subscriber: I am on page "/test-post"</name>
+                    <title>Check Taxonomy restriction with subscriber &amp; not-subscriber: I am on page "/test-post"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206227387' status='passed' stop='1594206228626'>
+                    <name>Check Taxonomy restriction with subscriber &amp; not-subscriber: I click "#category"</name>
+                    <title>Check Taxonomy restriction with subscriber &amp; not-subscriber: I click "#category"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206228626' status='passed' stop='1594206230627'>
+                    <name>Check Taxonomy restriction with subscriber &amp; not-subscriber: I wait 2</name>
+                    <title>Check Taxonomy restriction with subscriber &amp; not-subscriber: I wait 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -10,14 +10,7 @@ exports.config = {
   helpers: {
     WebDriver: {
       url: 'https://wpuf.ajaira.website/',
-      browser: 'chrome',
-      // port: 4444,
-      // restart: true,
-      // smartWait: 5000,
-      // timeouts: {
-      //    "script": 60000,
-      //    "page load": 10000
-      //  },
+      browser: 'chrome'
     }
   },
   include: {
@@ -31,6 +24,9 @@ exports.config = {
       enabled: true
     },
     screenshotOnFail: {
+      enabled: true
+    },
+    allure: {
       enabled: true
     }
   }

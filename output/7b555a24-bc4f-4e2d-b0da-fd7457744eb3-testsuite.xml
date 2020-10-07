@@ -1,0 +1,508 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1594205911850' stop='1594206021850'>
+    <name>Configure and Buy Subscription Pack Using Stripe Gateway:</name>
+    <title>Configure and Buy Subscription Pack Using Stripe Gateway:</title>
+    <test-cases>
+        <test-case start='1594205911852' status='passed' stop='1594205973823'>
+            <name>Create Subscription Pack And SetUp Paymeny Gateway</name>
+            <title>Create Subscription Pack And SetUp Paymeny Gateway</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1594205914179' status='passed' stop='1594205928541'>
+                    <name>I: loginAsAdmin </name>
+                    <title>I: loginAsAdmin </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1594205914179' status='passed' stop='1594205919518'>
+                            <name>I am on page "/login"</name>
+                            <title>I am on page "/login"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594205919518' status='passed' stop='1594205919728'>
+                            <name>I fill field "Username or Email", "admin"</name>
+                            <title>I fill field "Username or Email", "admin"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594205919728' status='passed' stop='1594205919861'>
+                            <name>I fill field "Password", *****</name>
+                            <title>I fill field "Password", *****</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594205919861' status='passed' stop='1594205921011'>
+                            <name>I check option "Remember Me"</name>
+                            <title>I check option "Remember Me"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594205921012' status='passed' stop='1594205924678'>
+                            <name>I click "wp-submit"</name>
+                            <title>I click "wp-submit"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594205924678' status='passed' stop='1594205924702'>
+                            <name>I dont see element ".wpuf-error"</name>
+                            <title>I dont see element ".wpuf-error"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594205924702' status='passed' stop='1594205928299'>
+                            <name>I am on page "/account"</name>
+                            <title>I am on page "/account"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594205928299' status='passed' stop='1594205928541'>
+                            <name>I see "Hello admin"</name>
+                            <title>I see "Hello admin"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1594205928541' status='passed' stop='1594205931401'>
+                    <name>I am on page "/wp-admin"</name>
+                    <title>I am on page "/wp-admin"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205931401' status='passed' stop='1594205933709'>
+                    <name>I click "Pages"</name>
+                    <title>I click "Pages"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205933709' status='passed' stop='1594205934200'>
+                    <name>I see "WPUF Subscription Page"</name>
+                    <title>I see "WPUF Subscription Page"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205934200' status='passed' stop='1594205937143'>
+                    <name>I click "User Frontend"</name>
+                    <title>I click "User Frontend"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205937143' status='passed' stop='1594205939144'>
+                    <name>I click "Subscriptions"</name>
+                    <title>I click "Subscriptions"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205939144' status='passed' stop='1594205942953'>
+                    <name>I click "Add Subscription"</name>
+                    <title>I click "Add Subscription"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205942953' status='passed' stop='1594205943611'>
+                    <name>I fill field "Pack Name", "Monthly Discount Pack"</name>
+                    <title>I fill field "Pack Name", "Monthly Discount Pack"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205943612' status='passed' stop='1594205943830'>
+                    <name>I click "//div[@id="mceu_32"]"</name>
+                    <title>I click "//div[@id="mceu_32"]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205943830' status='passed' stop='1594205944394'>
+                    <name>I type "This monthly special pack is for all subscriber"</name>
+                    <title>I type "This monthly special pack is for all subscriber"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205944394' status='passed' stop='1594205944839'>
+                    <name>I fill field "#wpuf-billing-amount", "50"</name>
+                    <title>I fill field "#wpuf-billing-amount", "50"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205944839' status='passed' stop='1594205945032'>
+                    <name>I fill field "#wpuf-expiration-number", "10"</name>
+                    <title>I fill field "#wpuf-expiration-number", "10"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205945032' status='passed' stop='1594205945199'>
+                    <name>I select option "#expiration-period", "Day(s)"</name>
+                    <title>I select option "#expiration-period", "Day(s)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205945199' status='passed' stop='1594205945221'>
+                    <name>I scroll page to top </name>
+                    <title>I scroll page to top </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205945221' status='passed' stop='1594205950227'>
+                    <name>I wait 5</name>
+                    <title>I wait 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205950227' status='passed' stop='1594205954315'>
+                    <name>I force click "Publish"</name>
+                    <title>I force click "Publish"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205954315' status='passed' stop='1594205954755'>
+                    <name>I see "Subscription pack published."</name>
+                    <title>I see "Subscription pack published."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205954755' status='passed' stop='1594205958003'>
+                    <name>I am on page "/wp-admin/admin.php?page=wpuf-settings"</name>
+                    <title>I am on page "/wp-admin/admin.php?page=wpuf-settings"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205958003' status='passed' stop='1594205958207'>
+                    <name>I click "Payments"</name>
+                    <title>I click "Payments"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205958207' status='passed' stop='1594205958414'>
+                    <name>I check option "wpuf_payment[enable_payment]"</name>
+                    <title>I check option "wpuf_payment[enable_payment]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205958414' status='passed' stop='1594205958723'>
+                    <name>I select option "wpuf_payment[subscription_page]", "Subscription"</name>
+                    <title>I select option "wpuf_payment[subscription_page]", "Subscription"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205958723' status='passed' stop='1594205958814'>
+                    <name>I check option "wpuf_payment[register_subscription]"</name>
+                    <title>I check option "wpuf_payment[register_subscription]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205958814' status='passed' stop='1594205959024'>
+                    <name>I select option "wpuf_payment[currency]", "US Dollar ($)"</name>
+                    <title>I select option "wpuf_payment[currency]", "US Dollar ($)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205959024' status='passed' stop='1594205959379'>
+                    <name>I select option "wpuf_payment[currency_position]", "Left ($99.99)"</name>
+                    <title>I select option "wpuf_payment[currency_position]", "Left ($99.99)"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205959379' status='passed' stop='1594205959442'>
+                    <name>I check option "wpuf_payment[sandbox_mode]"</name>
+                    <title>I check option "wpuf_payment[sandbox_mode]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205959442' status='passed' stop='1594205959648'>
+                    <name>I select option "wpuf_payment[payment_page]", "Payment"</name>
+                    <title>I select option "wpuf_payment[payment_page]", "Payment"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205959648' status='passed' stop='1594205959903'>
+                    <name>I select option "wpuf_payment[payment_success]", "Thank You"</name>
+                    <title>I select option "wpuf_payment[payment_success]", "Thank You"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205959903' status='passed' stop='1594205960008'>
+                    <name>I check option "wpuf_payment[active_gateways][paypal]"</name>
+                    <title>I check option "wpuf_payment[active_gateways][paypal]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205960008' status='passed' stop='1594205960073'>
+                    <name>I check option "wpuf_payment[active_gateways][bank]"</name>
+                    <title>I check option "wpuf_payment[active_gateways][bank]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205960073' status='passed' stop='1594205960187'>
+                    <name>I check option "wpuf_payment[active_gateways][stripe]"</name>
+                    <title>I check option "wpuf_payment[active_gateways][stripe]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205960188' status='passed' stop='1594205960414'>
+                    <name>I select option "wpuf_payment[bank_success]", "Order Received"</name>
+                    <title>I select option "wpuf_payment[bank_success]", "Order Received"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205960414' status='passed' stop='1594205960978'>
+                    <name>I fill field "wpuf_payment[paypal_email]", "farazi.test@gmail.com"</name>
+                    <title>I fill field "wpuf_payment[paypal_email]", "farazi.test@gmail.com"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205960978' status='passed' stop='1594205961302'>
+                    <name>I fill field "wpuf_payment[paypal_api_username]", "farazi"</name>
+                    <title>I fill field "wpuf_payment[paypal_api_username]", "farazi"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205961302' status='passed' stop='1594205961609'>
+                    <name>I fill field "wpuf_payment[paypal_api_password]", "farazi"</name>
+                    <title>I fill field "wpuf_payment[paypal_api_password]", "farazi"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205961609' status='passed' stop='1594205962003'>
+                    <name>I fill field "wpuf_payment[paypal_api_signature]", "farazi"</name>
+                    <title>I fill field "wpuf_payment[paypal_api_signature]", "farazi"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205962003' status='passed' stop='1594205962061'>
+                    <name>I check option "wpuf_payment[use_legacy_stripe_api]"</name>
+                    <title>I check option "wpuf_payment[use_legacy_stripe_api]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205962062' status='passed' stop='1594205962121'>
+                    <name>I check option "wpuf_payment[use_stripe_3ds]"</name>
+                    <title>I check option "wpuf_payment[use_stripe_3ds]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205962121' status='passed' stop='1594205962681'>
+                    <name>I fill field "wpuf_payment[stripe_api_secret]", "sk_test_U9NMSvn0VKUzN9UZ5gPPnUpi"</name>
+                    <title>I fill field "wpuf_payment[stripe_api_secret]", "sk_test_U9NMSvn0VKUzN9UZ5gPPnUpi"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205962681' status='passed' stop='1594205963464'>
+                    <name>I fill field "wpuf_payment[stripe_api_key]", "pk_test_cwBhsWC96Ek7RwvVjIJV1rQa"</name>
+                    <title>I fill field "wpuf_payment[stripe_api_key]", "pk_test_cwBhsWC96Ek7RwvVjIJV1rQa"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205963464' status='passed' stop='1594205967991'>
+                    <name>I click "//div[@id="wpuf_payment"]//form//div//input[@id="submit"]"</name>
+                    <title>I click "//div[@id="wpuf_payment"]//form//div//input[@id="submit"]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205967991' status='passed' stop='1594205972997'>
+                    <name>I wait 5</name>
+                    <title>I wait 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205972997' status='passed' stop='1594205973011'>
+                    <name>I wait for element "#wpuf_payment", 5</name>
+                    <title>I wait for element "#wpuf_payment", 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205973011' status='passed' stop='1594205973017'>
+                    <name>I see in current url "/wp-admin/admin.php?page=wpuf-settings&amp;settings-updated=true"</name>
+                    <title>I see in current url "/wp-admin/admin.php?page=wpuf-settings&amp;settings-updated=true"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205973017' status='passed' stop='1594205973823'>
+                    <name>I see "Settings saved."</name>
+                    <title>I see "Settings saved."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1594205973929' status='passed' stop='1594206021727'>
+            <name>Customer Buy Subscription Pack Using Stripe Gateway</name>
+            <title>Customer Buy Subscription Pack Using Stripe Gateway</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1594205975752' status='passed' stop='1594205980504'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205980504' status='passed' stop='1594205985689'>
+                    <name>I am on page "/registration"</name>
+                    <title>I am on page "/registration"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205985689' status='passed' stop='1594205985705'>
+                    <name>I see in current url "/subscription"</name>
+                    <title>I see in current url "/subscription"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594205985705' status='passed' stop='1594205991593'>
+                    <name>I: buySubscription </name>
+                    <title>I: buySubscription </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1594205985705' status='passed' stop='1594205988766'>
+                            <name>I click "//div[3]/a"</name>
+                            <title>I click "//div[3]/a"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594205988766' status='passed' stop='1594205988969'>
+                            <name>I fill field "first_name", "Ila"</name>
+                            <title>I fill field "first_name", "Ila"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594205988969' status='passed' stop='1594205989164'>
+                            <name>I fill field "user_login", "MacGyver"</name>
+                            <title>I fill field "user_login", "MacGyver"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594205989164' status='passed' stop='1594205989571'>
+                            <name>I fill field "Email", "Hannah_Spencer7@hotmail.com"</name>
+                            <title>I fill field "Email", "Hannah_Spencer7@hotmail.com"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594205989571' status='passed' stop='1594205989880'>
+                            <name>I fill field "//*[@id="password_291_1"]", "!!@@1122qq"</name>
+                            <title>I fill field "//*[@id="password_291_1"]", "!!@@1122qq"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594205989880' status='passed' stop='1594205990069'>
+                            <name>I fill field "//*[@id="password_291_2"]", "!!@@1122qq"</name>
+                            <title>I fill field "//*[@id="password_291_2"]", "!!@@1122qq"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594205990069' status='passed' stop='1594205991438'>
+                            <name>I click "submit"</name>
+                            <title>I click "submit"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594205991439' status='passed' stop='1594205991593'>
+                            <name>I see "Payment"</name>
+                            <title>I see "Payment"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1594205991593' status='passed' stop='1594206021727'>
+                    <name>I: stripePayment </name>
+                    <title>I: stripePayment </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1594205991593' status='passed' stop='1594205998707'>
+                            <name>I check option "Credit Card"</name>
+                            <title>I check option "Credit Card"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594205998707' status='passed' stop='1594205998766'>
+                            <name>I press key "Tab"</name>
+                            <title>I press key "Tab"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594205998766' status='passed' stop='1594206003771'>
+                            <name>I wait 5</name>
+                            <title>I wait 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206003771' status='passed' stop='1594206003962'>
+                            <name>I type "4242424242424242"</name>
+                            <title>I type "4242424242424242"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206003963' status='passed' stop='1594206005966'>
+                            <name>I wait 2</name>
+                            <title>I wait 2</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206005966' status='passed' stop='1594206006012'>
+                            <name>I type "12"</name>
+                            <title>I type "12"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206006012' status='passed' stop='1594206008017'>
+                            <name>I wait 2</name>
+                            <title>I wait 2</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206008017' status='passed' stop='1594206008047'>
+                            <name>I type "21"</name>
+                            <title>I type "21"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206008047' status='passed' stop='1594206010051'>
+                            <name>I wait 2</name>
+                            <title>I wait 2</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206010051' status='passed' stop='1594206010090'>
+                            <name>I type "121"</name>
+                            <title>I type "121"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206010090' status='passed' stop='1594206012095'>
+                            <name>I wait 2</name>
+                            <title>I wait 2</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206012095' status='passed' stop='1594206012172'>
+                            <name>I type "10005"</name>
+                            <title>I type "10005"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206012172' status='passed' stop='1594206013487'>
+                            <name>I click "wpuf_payment_submit"</name>
+                            <title>I click "wpuf_payment_submit"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206013487' status='passed' stop='1594206018493'>
+                            <name>I wait 5</name>
+                            <title>I wait 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206018493' status='passed' stop='1594206021726'>
+                            <name>I see "Payment is complete"</name>
+                            <title>I see "Payment is complete"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

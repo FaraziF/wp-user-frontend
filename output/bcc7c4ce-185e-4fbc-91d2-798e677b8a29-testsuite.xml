@@ -1,0 +1,576 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1594206021956' stop='1594206163736'>
+    <name>Fallback Cost for Form Subscription Payment:</name>
+    <title>Fallback Cost for Form Subscription Payment:</title>
+    <test-cases>
+        <test-case start='1594206021957' status='passed' stop='1594206067217'>
+            <name>Payment Settings from post form</name>
+            <title>Payment Settings from post form</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1594206023624' status='passed' stop='1594206037401'>
+                    <name>I: loginAsAdmin </name>
+                    <title>I: loginAsAdmin </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1594206023624' status='passed' stop='1594206028600'>
+                            <name>I am on page "/login"</name>
+                            <title>I am on page "/login"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206028600' status='passed' stop='1594206028789'>
+                            <name>I fill field "Username or Email", "admin"</name>
+                            <title>I fill field "Username or Email", "admin"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206028789' status='passed' stop='1594206028936'>
+                            <name>I fill field "Password", *****</name>
+                            <title>I fill field "Password", *****</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206028936' status='passed' stop='1594206030153'>
+                            <name>I check option "Remember Me"</name>
+                            <title>I check option "Remember Me"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206030153' status='passed' stop='1594206033840'>
+                            <name>I click "wp-submit"</name>
+                            <title>I click "wp-submit"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206033840' status='passed' stop='1594206033860'>
+                            <name>I dont see element ".wpuf-error"</name>
+                            <title>I dont see element ".wpuf-error"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206033860' status='passed' stop='1594206037176'>
+                            <name>I am on page "/account"</name>
+                            <title>I am on page "/account"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206037176' status='passed' stop='1594206037401'>
+                            <name>I see "Hello admin"</name>
+                            <title>I see "Hello admin"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1594206037401' status='passed' stop='1594206040140'>
+                    <name>I am on page "/wp-admin"</name>
+                    <title>I am on page "/wp-admin"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206040140' status='passed' stop='1594206043391'>
+                    <name>I click "User Frontend"</name>
+                    <title>I click "User Frontend"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206043391' status='passed' stop='1594206047549'>
+                    <name>I click "Subscription"</name>
+                    <title>I click "Subscription"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206047549' status='passed' stop='1594206050698'>
+                    <name>I click "//tr[1]/td/strong/a"</name>
+                    <title>I click "//tr[1]/td/strong/a"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206050698' status='passed' stop='1594206050849'>
+                    <name>I click "Posting Restriction"</name>
+                    <title>I click "Posting Restriction"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206050849' status='passed' stop='1594206051130'>
+                    <name>I fill field "post_type_name[post]", "2"</name>
+                    <title>I fill field "post_type_name[post]", "2"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206051130' status='passed' stop='1594206055681'>
+                    <name>I click "Update"</name>
+                    <title>I click "Update"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206055681' status='passed' stop='1594206057811'>
+                    <name>I click "Post Forms"</name>
+                    <title>I click "Post Forms"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206057811' status='passed' stop='1594206061317'>
+                    <name>I click "//*[@id="the-list"]/tr[1]/td[1]/a"</name>
+                    <title>I click "//*[@id="the-list"]/tr[1]/td[1]/a"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206061317' status='passed' stop='1594206061504'>
+                    <name>I click ".form-id"</name>
+                    <title>I click ".form-id"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206061504' status='passed' stop='1594206066508'>
+                    <name>I wait 5</name>
+                    <title>I wait 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206066508' status='passed' stop='1594206066613'>
+                    <name>I click "Settings", "h2"</name>
+                    <title>I click "Settings", "h2"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206066613' status='passed' stop='1594206066712'>
+                    <name>I click "Payment Settings"</name>
+                    <title>I click "Payment Settings"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206066712' status='passed' stop='1594206066762'>
+                    <name>I check option "Enable Payments"</name>
+                    <title>I check option "Enable Payments"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206066762' status='passed' stop='1594206066796'>
+                    <name>I check option "Force subscription pack"</name>
+                    <title>I check option "Force subscription pack"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206066796' status='passed' stop='1594206066825'>
+                    <name>I check option "Fallback pay per post charging"</name>
+                    <title>I check option "Fallback pay per post charging"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206066825' status='passed' stop='1594206066966'>
+                    <name>I fill field "wpuf_settings[fallback_ppp_cost]", "1"</name>
+                    <title>I fill field "wpuf_settings[fallback_ppp_cost]", "1"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206066967' status='passed' stop='1594206066993'>
+                    <name>I check option "Enable Pay Per Post"</name>
+                    <title>I check option "Enable Pay Per Post"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206066994' status='passed' stop='1594206067127'>
+                    <name>I fill field "wpuf_settings[pay_per_post_cost]", "3"</name>
+                    <title>I fill field "wpuf_settings[pay_per_post_cost]", "3"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206067127' status='passed' stop='1594206067217'>
+                    <name>I click "Save Form"</name>
+                    <title>I click "Save Form"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1594206067395' status='passed' stop='1594206163680'>
+            <name>Subscriber submit fallback cost post &amp; pay per post</name>
+            <title>Subscriber submit fallback cost post &amp; pay per post</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1594206069256' status='passed' stop='1594206072800'>
+                    <name>I am on page "/test-page/"</name>
+                    <title>I am on page "/test-page/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206072800' status='passed' stop='1594206072952'>
+                    <name>I see "You need to buy a pack to post in this form."</name>
+                    <title>I see "You need to buy a pack to post in this form."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206072952' status='passed' stop='1594206075036'>
+                    <name>I am on page "/subscription/"</name>
+                    <title>I am on page "/subscription/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206075038' status='passed' stop='1594206081499'>
+                    <name>I: buySubscription </name>
+                    <title>I: buySubscription </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1594206075038' status='passed' stop='1594206078042'>
+                            <name>I click "//div[3]/a"</name>
+                            <title>I click "//div[3]/a"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206078042' status='passed' stop='1594206078355'>
+                            <name>I fill field "first_name", "Marlee"</name>
+                            <title>I fill field "first_name", "Marlee"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206078355' status='passed' stop='1594206078626'>
+                            <name>I fill field "user_login", "Orn"</name>
+                            <title>I fill field "user_login", "Orn"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206078626' status='passed' stop='1594206079229'>
+                            <name>I fill field "Email", "Allison_Dare7@hotmail.com"</name>
+                            <title>I fill field "Email", "Allison_Dare7@hotmail.com"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206079230' status='passed' stop='1594206079511'>
+                            <name>I fill field "//*[@id="password_291_1"]", "!!@@1122qq"</name>
+                            <title>I fill field "//*[@id="password_291_1"]", "!!@@1122qq"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206079511' status='passed' stop='1594206079763'>
+                            <name>I fill field "//*[@id="password_291_2"]", "!!@@1122qq"</name>
+                            <title>I fill field "//*[@id="password_291_2"]", "!!@@1122qq"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206079763' status='passed' stop='1594206081186'>
+                            <name>I click "submit"</name>
+                            <title>I click "submit"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206081186' status='passed' stop='1594206081499'>
+                            <name>I see "Payment"</name>
+                            <title>I see "Payment"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1594206081499' status='passed' stop='1594206111059'>
+                    <name>I: stripePayment </name>
+                    <title>I: stripePayment </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1594206081499' status='passed' stop='1594206088186'>
+                            <name>I check option "Credit Card"</name>
+                            <title>I check option "Credit Card"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206088187' status='passed' stop='1594206088203'>
+                            <name>I press key "Tab"</name>
+                            <title>I press key "Tab"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206088203' status='passed' stop='1594206093208'>
+                            <name>I wait 5</name>
+                            <title>I wait 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206093208' status='passed' stop='1594206093377'>
+                            <name>I type "4242424242424242"</name>
+                            <title>I type "4242424242424242"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206093378' status='passed' stop='1594206095382'>
+                            <name>I wait 2</name>
+                            <title>I wait 2</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206095382' status='passed' stop='1594206095412'>
+                            <name>I type "12"</name>
+                            <title>I type "12"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206095413' status='passed' stop='1594206097416'>
+                            <name>I wait 2</name>
+                            <title>I wait 2</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206097416' status='passed' stop='1594206097447'>
+                            <name>I type "21"</name>
+                            <title>I type "21"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206097447' status='passed' stop='1594206099451'>
+                            <name>I wait 2</name>
+                            <title>I wait 2</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206099451' status='passed' stop='1594206099488'>
+                            <name>I type "121"</name>
+                            <title>I type "121"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206099488' status='passed' stop='1594206101493'>
+                            <name>I wait 2</name>
+                            <title>I wait 2</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206101494' status='passed' stop='1594206101548'>
+                            <name>I type "10005"</name>
+                            <title>I type "10005"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206101548' status='passed' stop='1594206102808'>
+                            <name>I click "wpuf_payment_submit"</name>
+                            <title>I click "wpuf_payment_submit"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206102808' status='passed' stop='1594206107814'>
+                            <name>I wait 5</name>
+                            <title>I wait 5</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206107814' status='passed' stop='1594206111059'>
+                            <name>I see "Payment is complete"</name>
+                            <title>I see "Payment is complete"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1594206111059' status='passed' stop='1594206112792'>
+                    <name>I am on page "/test-page/"</name>
+                    <title>I am on page "/test-page/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206112792' status='passed' stop='1594206113097'>
+                    <name>I fill field "post_title", "Dolore laudantium tempora molestiae."</name>
+                    <title>I fill field "post_title", "Dolore laudantium tempora molestiae."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206113097' status='passed' stop='1594206113830'>
+                    <name>I fill field "post_content", "Sed ut voluptates soluta est itaque corrupti neque reprehenderit illum. Qui quia et quibusdam. In soluta soluta deleniti voluptatem dolorem eos eaque."</name>
+                    <title>I fill field "post_content", "Sed ut voluptates soluta est itaque corrupti neque reprehenderit illum. Qui quia et quibusdam. In soluta soluta deleniti voluptatem dolorem eos eaque."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206113831' status='passed' stop='1594206115075'>
+                    <name>I click "submit"</name>
+                    <title>I click "submit"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206115075' status='passed' stop='1594206117768'>
+                    <name>I see "Post saved"</name>
+                    <title>I see "Post saved"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206117768' status='passed' stop='1594206119862'>
+                    <name>I refresh page </name>
+                    <title>I refresh page </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206119863' status='passed' stop='1594206120309'>
+                    <name>I fill field "post_title", "Maxime omnis ipsa consequatur voluptatibus et et eveniet et commodi."</name>
+                    <title>I fill field "post_title", "Maxime omnis ipsa consequatur voluptatibus et et eveniet et commodi."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206120309' status='passed' stop='1594206121467'>
+                    <name>I fill field "post_content", "Qui eos ea nisi. Iste numquam quia dolorum. Repudiandae cumque quas quasi quam nulla. Mollitia accusantium voluptas qui dignissimos sed et voluptatem quae libero. Sint voluptatum nulla pariatur repellendus totam possimus. Eos reiciendis consequatur illo atque."</name>
+                    <title>I fill field "post_content", "Qui eos ea nisi. Iste numquam quia dolorum. Repudiandae cumque quas quasi quam nulla. Mollitia accusantium voluptas qui dignissimos sed et voluptatem quae libero. Sint voluptatum nulla pariatur repellendus totam possimus. Eos reiciendis consequatur illo atque."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206121467' status='passed' stop='1594206121613'>
+                    <name>I click "submit"</name>
+                    <title>I click "submit"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206121613' status='passed' stop='1594206124334'>
+                    <name>I see "Post saved"</name>
+                    <title>I see "Post saved"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206124334' status='passed' stop='1594206126782'>
+                    <name>I refresh page </name>
+                    <title>I refresh page </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206126782' status='passed' stop='1594206126910'>
+                    <name>I see "Your Subscription pack is exhausted."</name>
+                    <title>I see "Your Subscription pack is exhausted."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206126910' status='passed' stop='1594206127152'>
+                    <name>I fill field "post_title", "Aspernatur quidem velit nisi ea."</name>
+                    <title>I fill field "post_title", "Aspernatur quidem velit nisi ea."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206127152' status='passed' stop='1594206128361'>
+                    <name>I fill field "post_content", "Aperiam reiciendis in corrupti laboriosam perspiciatis facilis. A dolor voluptate exercitationem. Consequatur laboriosam voluptas doloribus velit fuga quisquam. Omnis autem fugit quia hic ipsum nulla repudiandae. Laboriosam sunt fuga voluptatum aut at voluptatem provident."</name>
+                    <title>I fill field "post_content", "Aperiam reiciendis in corrupti laboriosam perspiciatis facilis. A dolor voluptate exercitationem. Consequatur laboriosam voluptas doloribus velit fuga quisquam. Omnis autem fugit quia hic ipsum nulla repudiandae. Laboriosam sunt fuga voluptatum aut at voluptatem provident."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206128361' status='passed' stop='1594206128511'>
+                    <name>I click "submit"</name>
+                    <title>I click "submit"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206128511' status='passed' stop='1594206140189'>
+                    <name>I: bankPayment </name>
+                    <title>I: bankPayment </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1594206128511' status='passed' stop='1594206134275'>
+                            <name>I check option "Bank Payment"</name>
+                            <title>I check option "Bank Payment"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206134275' status='passed' stop='1594206138730'>
+                            <name>I click "wpuf_payment_submit"</name>
+                            <title>I click "wpuf_payment_submit"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206138730' status='passed' stop='1594206138838'>
+                            <name>I see "Order Received"</name>
+                            <title>I see "Order Received"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206138839' status='passed' stop='1594206138845'>
+                            <name>I see in current url "/order-received/"</name>
+                            <title>I see in current url "/order-received/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1594206140189' status='passed' stop='1594206154022'>
+                    <name>I: loginAsAdmin </name>
+                    <title>I: loginAsAdmin </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1594206140190' status='passed' stop='1594206145608'>
+                            <name>admin approve transaction: I am on page "/login"</name>
+                            <title>admin approve transaction: I am on page "/login"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206145608' status='passed' stop='1594206145784'>
+                            <name>admin approve transaction: I fill field "Username or Email", "admin"</name>
+                            <title>admin approve transaction: I fill field "Username or Email", "admin"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206145784' status='passed' stop='1594206145930'>
+                            <name>admin approve transaction: I fill field "Password", *****</name>
+                            <title>admin approve transaction: I fill field "Password", *****</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206145931' status='passed' stop='1594206147120'>
+                            <name>admin approve transaction: I check option "Remember Me"</name>
+                            <title>admin approve transaction: I check option "Remember Me"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206147120' status='passed' stop='1594206150458'>
+                            <name>admin approve transaction: I click "wp-submit"</name>
+                            <title>admin approve transaction: I click "wp-submit"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206150458' status='passed' stop='1594206150473'>
+                            <name>admin approve transaction: I dont see element ".wpuf-error"</name>
+                            <title>admin approve transaction: I dont see element ".wpuf-error"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206150473' status='passed' stop='1594206153829'>
+                            <name>admin approve transaction: I am on page "/account"</name>
+                            <title>admin approve transaction: I am on page "/account"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1594206153830' status='passed' stop='1594206154022'>
+                            <name>admin approve transaction: I see "Hello admin"</name>
+                            <title>admin approve transaction: I see "Hello admin"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1594206154022' status='passed' stop='1594206156494'>
+                    <name>admin approve transaction: I am on page "/wp-admin/admin.php?page=wpuf_transaction"</name>
+                    <title>admin approve transaction: I am on page "/wp-admin/admin.php?page=wpuf_transaction"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206156495' status='passed' stop='1594206159411'>
+                    <name>admin approve transaction: I click "Pending"</name>
+                    <title>admin approve transaction: I click "Pending"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206159411' status='passed' stop='1594206159418'>
+                    <name>admin approve transaction: I see in current url "/wp-admin/admin.php?page=wpuf_transaction&amp;status=pending"</name>
+                    <title>admin approve transaction: I see in current url "/wp-admin/admin.php?page=wpuf_transaction&amp;status=pending"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206159418' status='passed' stop='1594206159484'>
+                    <name>admin approve transaction: I move cursor to "//tbody[@id="the-list"]//tr[1]//td[1]"</name>
+                    <title>admin approve transaction: I move cursor to "//tbody[@id="the-list"]//tr[1]//td[1]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1594206159484' status='passed' stop='1594206163679'>
+                    <name>admin approve transaction: I click "Accept"</name>
+                    <title>admin approve transaction: I click "Accept"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
